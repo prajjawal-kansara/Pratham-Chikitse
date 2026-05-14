@@ -1,0 +1,92 @@
+{
+  "hospitals": [
+    {
+      "name": "Kidwai Memorial Institute of Oncology",
+      "nameKannada": "ಕಿದ್ವಾಯಿ ಸ್ಮಾರಕ ಆಂಕೊಲಜಿ ಸಂಸ್ಥೆ",
+      "address": "Dr M H Marigowda Rd, Bengaluru - 560029",
+      "addressKannada": "ಡಾ ಎಂ ಎಚ್ ಮಾರಿಗೌಡ ರಸ್ತೆ, ಬೆಂಗಳೂರು - 560029",
+      "phone": "08026094000",
+      "latitude": 12.9352,
+      "longitude": 77.5956,
+      "isOpen24x7": true,
+      "type": "government"
+    },
+    {
+      "name": "Victoria Government Hospital",
+      "nameKannada": "ವಿಕ್ಟೋರಿಯಾ ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆ",
+      "address": "Fort Rd, Krishna Rajendra Market, Bengaluru - 560002",
+      "addressKannada": "ಫೋರ್ಟ್ ರಸ್ತೆ, ಕೃಷ್ಣ ರಾಜೇಂದ್ರ ಮಾರ್ಕೆಟ್, ಬೆಂಗಳೂರು - 560002",
+      "phone": "08022216131",
+      "latitude": 12.9636,
+      "longitude": 77.5756,
+      "isOpen24x7": true,
+      "type": "government"
+    },
+    {
+      "name": "Bowring & Lady Curzon Hospital",
+      "nameKannada": "ಬೌರಿಂಗ್ ಮತ್ತು ಲೇಡಿ ಕರ್ಜನ್ ಆಸ್ಪತ್ರೆ",
+      "address": "Shivajinagar, Bengaluru - 560001",
+      "addressKannada": "ಶಿವಾಜಿನಗರ, ಬೆಂಗಳೂರು - 560001",
+      "phone": "08025320404",
+      "latitude": 12.9827,
+      "longitude": 77.5978,
+      "isOpen24x7": true,
+      "type": "government"
+    },
+    {
+      "name": "MS Ramaiah Medical Teaching Hospital",
+      "nameKannada": "ಎಂ ಎಸ್ ರಾಮಯ್ಯ ವೈದ್ಯಕೀಯ ಬೋಧನಾ ಆಸ್ಪತ್ರೆ",
+      "address": "New BEL Rd, MSR Nagar, Bengaluru - 560054",
+      "addressKannada": "ನ್ಯೂ ಬಿಇಎಲ್ ರಸ್ತೆ, ಎಂಎಸ್ಆರ್ ನಗರ, ಬೆಂಗಳೂರು - 560054",
+      "phone": "08023600822",
+      "latitude": 13.0383,
+      "longitude": 77.5598,
+      "isOpen24x7": true,
+      "type": "private"
+    },
+    {
+      "name": "St. John's Medical College Hospital",
+      "nameKannada": "ಸೇಂಟ್ ಜಾನ್ಸ್ ವೈದ್ಯಕೀಯ ಕಾಲೇಜು ಆಸ್ಪತ್ರೆ",
+      "address": "Sarjapur Rd, John Nagar, Bengaluru - 560034",
+      "addressKannada": "ಸರ್ಜಾಪುರ ರಸ್ತೆ, ಜಾನ್ ನಗರ, ಬೆಂಗಳೂರು - 560034",
+      "phone": "08049467777",
+      "latitude": 12.9239,
+      "longitude": 77.6210,
+      "isOpen24x7": true,
+      "type": "private"
+    },
+    {
+      "name": "Nimhans (National Institute of Mental Health)",
+      "nameKannada": "ನಿಮ್ಹಾನ್ಸ್ ಆಸ್ಪತ್ರೆ",
+      "address": "Hosur Main Rd, Lakkasandra, Bengaluru - 560029",
+      "addressKannada": "ಹೊಸೂರು ಮೈನ್ ರಸ್ತೆ, ಲಕ್ಕಸಂದ್ರ, ಬೆಂಗಳೂರು - 560029",
+      "phone": "08046110007",
+      "latitude": 12.9411,
+      "longitude": 77.5956,
+      "isOpen24x7": true,
+      "type": "government"
+    },
+    {
+      "name": "Jayadeva Institute of Cardiovascular Sciences",
+      "nameKannada": "ಜಯದೇವ ಹೃದ್ರೋಗ ವಿಜ್ಞಾನ ಸಂಸ್ಥೆ",
+      "address": "Bannerghatta Rd, Jayanagar, Bengaluru - 560069",
+      "addressKannada": "ಬನ್ನೇರುಘಟ್ಟ ರಸ್ತೆ, ಜಯನಗರ, ಬೆಂಗಳೂರು - 560069",
+      "phone": "08026534551",
+      "latitude": 12.9024,
+      "longitude": 77.5923,
+      "isOpen24x7": true,
+      "type": "government"
+    },
+    {
+      "name": "Apollo Hospital Bannerghatta",
+      "nameKannada": "ಅಪೋಲೋ ಆಸ್ಪತ್ರೆ ಬನ್ನೇರುಘಟ್ಟ",
+      "address": "154/11, Opposite IIM-B, Bannerghatta Rd, Bengaluru - 560076",
+      "addressKannada": "154/11, ಐಐಎಂ-ಬಿ ಎದುರು, ಬನ್ನೇರುಘಟ್ಟ ರಸ್ತೆ, ಬೆಂಗಳೂರು - 560076",
+      "phone": "08049417777",
+      "latitude": 12.8892,
+      "longitude": 77.5965,
+      "isOpen24x7": true,
+      "type": "private"
+    }
+  ]
+}

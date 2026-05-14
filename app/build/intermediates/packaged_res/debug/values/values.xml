@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorCardBorder">#E0E0E0</color>
+    <color name="colorCritical">#E53935</color>
+    <color name="colorDanger">#C62828</color>
+    <color name="colorDangerLight">#FFEBEE</color>
+    <color name="colorHospitalBlue">#1565C0</color>
+    <color name="colorHospitalBlueLight">#E3F2FD</color>
+    <color name="colorNormal">#2196F3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimary">#E53935</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorPrimaryLight">#FFCDD2</color>
+    <color name="colorRank2">#1565C0</color>
+    <color name="colorRank3">#E65100</color>
+    <color name="colorSOS">#E53935</color>
+    <color name="colorSOSDark">#B71C1C</color>
+    <color name="colorSuccess">#2E7D32</color>
+    <color name="colorSuccessLight">#E8F5E9</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorTextHint">#999999</color>
+    <color name="colorTextKannada">#333333</color>
+    <color name="colorTextPrimary">#111111</color>
+    <color name="colorTextSecondary">#555555</color>
+    <color name="colorWarning">#FF9800</color>
+    <color name="colorWarningLight">#FFF3E0</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="audio_btn_size">56dp</dimen>
+    <dimen name="btn_height">52dp</dimen>
+    <dimen name="card_corner_radius">14dp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
+    <dimen name="sos_height">64dp</dimen>
+    <dimen name="spacing_lg">16dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_xl">24dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="text_emergency_name">14sp</dimen>
+    <dimen name="text_instruction">16sp</dimen>
+    <dimen name="text_kannada">12sp</dimen>
+    <dimen name="text_step_num">20sp</dimen>
+    <dimen name="tile_icon_bg_size">56dp</dimen>
+    <dimen name="tile_icon_size">48dp</dimen>
+    <string name="app_name">ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ</string>
+    <string name="app_name_en">Pratham Chikitse</string>
+    <string name="audio_off">Audio OFF</string>
+    <string name="audio_on">Audio ON</string>
+    <string name="call_label">Call</string>
+    <string name="do_label">✓ DO</string>
+    <string name="dont_label">✗ DON\'T</string>
+    <string name="hospitals_btn">Nearest Hospitals</string>
+    <string name="nearest_hospitals">Nearest Hospitals — ಹತ್ತಿರದ ಆಸ್ಪತ್ರೆ</string>
+    <string name="next_step">Next Step →</string>
+    <string name="offline_mode">Offline Mode — Works without internet</string>
+    <string name="open_24_7">Open 24/7</string>
+    <string name="prev_step">← Previous</string>
+    <string name="search_hint">Search emergency (ತುರ್ತು ಹುಡುಕಿ)…</string>
+    <string name="select_emergency">Select Emergency Type</string>
+    <string name="sos_label">EMERGENCY SOS — 108</string>
+    <string name="sos_sub">Tap to call ambulance immediately</string>
+    <string name="tagline">Offline Emergency First Aid Guide</string>
+    <style name="EmergencyCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">3dp</item>
+        <item name="cardCornerRadius">14dp</item>
+        <item name="cardBackgroundColor">@color/colorSurface</item>
+    </style>
+    <style name="SOSButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="backgroundTint">@color/colorSOS</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.Emergency.Kannada" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorTextKannada</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+    <style name="TextAppearance.Emergency.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    <style name="TextAppearance.Step.Instruction" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+    <style name="Theme.PrathamChikitse" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.PrathamChikitse.Splash" parent="Theme.PrathamChikitse">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

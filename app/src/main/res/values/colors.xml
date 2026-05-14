@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors -->
+    <color name="colorPrimary">#E53935</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorPrimaryLight">#FFCDD2</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Severity Colors -->
+    <color name="colorCritical">#E53935</color>
+    <color name="colorWarning">#FF9800</color>
+    <color name="colorNormal">#2196F3</color>
+
+    <!-- Status Colors -->
+    <color name="colorSuccess">#2E7D32</color>
+    <color name="colorSuccessLight">#E8F5E9</color>
+    <color name="colorDanger">#C62828</color>
+    <color name="colorDangerLight">#FFEBEE</color>
+    <color name="colorWarningLight">#FFF3E0</color>
+
+    <!-- UI Colors -->
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorCardBorder">#E0E0E0</color>
+
+    <!-- Text Colors -->
+    <color name="colorTextPrimary">#111111</color>
+    <color name="colorTextSecondary">#555555</color>
+    <color name="colorTextHint">#999999</color>
+    <color name="colorTextKannada">#333333</color>
+
+    <!-- Hospital accent -->
+    <color name="colorHospitalBlue">#1565C0</color>
+    <color name="colorHospitalBlueLight">#E3F2FD</color>
+    <color name="colorRank2">#1565C0</color>
+    <color name="colorRank3">#E65100</color>
+
+    <!-- SOS Button -->
+    <color name="colorSOS">#E53935</color>
+    <color name="colorSOSDark">#B71C1C</color>
+
+    <!-- Black / White -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

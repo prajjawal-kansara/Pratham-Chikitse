@@ -1,0 +1,439 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); color: var(--color-text-primary); }
+
+.arch-wrap { padding: 1rem 0; }
+
+.section-title {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 1.5rem 0 0.75rem;
+}
+.section-title:first-child { margin-top: 0; }
+
+.layer {
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 12px;
+  margin-bottom: 8px;
+  background: var(--color-background-primary);
+}
+
+.layer-header {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 6px;
+}
+
+.file-card {
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-md);
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background 0.15s;
+  position: relative;
+}
+.file-card:hover { background: var(--color-background-secondary); }
+
+.file-card .file-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 2px;
+}
+.file-card .file-desc {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+.file-card .badge {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 99px;
+  margin-bottom: 4px;
+  letter-spacing: 0.05em;
+}
+.badge-java { background: var(--color-background-warning); color: var(--color-text-warning); }
+.badge-xml  { background: var(--color-background-info);    color: var(--color-text-info); }
+.badge-json { background: var(--color-background-success); color: var(--color-text-success); }
+.badge-gradle { background: var(--color-background-danger); color: var(--color-text-danger); }
+
+.arrow-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 4px 0;
+  color: var(--color-text-tertiary);
+  font-size: 12px;
+}
+.arrow-row i { font-size: 16px; }
+
+/* Detail panel */
+.detail-panel {
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-lg);
+  padding: 16px;
+  margin-top: 12px;
+  background: var(--color-background-secondary);
+  display: none;
+}
+.detail-panel.visible { display: block; }
+.detail-title { font-size: 14px; font-weight: 500; margin-bottom: 8px; }
+.detail-body { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+.detail-body code {
+  background: var(--color-background-primary);
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+}
+.detail-close {
+  float: right;
+  font-size: 12px;
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+}
+.detail-close:hover { color: var(--color-text-primary); }
+
+.flow-row {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+.flow-step {
+  flex: 1;
+  min-width: 80px;
+  border: 0.5px solid var(--color-border-tertiary);
+  border-radius: var(--border-radius-md);
+  padding: 6px 8px;
+  font-size: 11px;
+  text-align: center;
+  background: var(--color-background-primary);
+}
+.flow-step.highlight { border-color: var(--color-border-info); background: var(--color-background-info); color: var(--color-text-info); }
+.flow-arrow { display: flex; align-items: center; color: var(--color-text-tertiary); font-size: 14px; }
+</style>
+
+<div class="arch-wrap">
+  <h2 class="sr-only">Pratham Chikitse Android app architecture — click any file card to learn about it</h2>
+
+  <p class="section-title">App flow — how a user reaches step-by-step instructions</p>
+  <div class="flow-row">
+    <div class="flow-step">App launches</div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-step highlight">SplashActivity</div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-step">DataManager loads JSON</div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-step">MainActivity</div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-step">Tap tile</div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-step highlight">StepDetailActivity</div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-step">ViewPager2 + TTS</div>
+  </div>
+
+  <p class="section-title">UI layer — Activities &amp; Fragments (Java)</p>
+  <div class="layer">
+    <div class="file-grid">
+      <div class="file-card" onclick="show('splash')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">SplashActivity.java</div>
+        <div class="file-desc">Opening screen, preloads data in background thread</div>
+      </div>
+      <div class="file-card" onclick="show('main')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">MainActivity.java</div>
+        <div class="file-desc">Home screen, emergency grid, SOS button, search</div>
+      </div>
+      <div class="file-card" onclick="show('stepdetail')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">StepDetailActivity.java</div>
+        <div class="file-desc">Hosts ViewPager2, controls TTS audio mode</div>
+      </div>
+      <div class="file-card" onclick="show('stepfrag')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">StepFragment.java</div>
+        <div class="file-desc">One page per step — instruction, Do's, Don'ts</div>
+      </div>
+      <div class="file-card" onclick="show('hospital')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">HospitalActivity.java</div>
+        <div class="file-desc">Sorts hospitals by GPS distance, renders list</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-row"><i class="ti ti-arrow-down" aria-hidden="true"></i> uses</div>
+
+  <p class="section-title">Adapters layer — bridge between data and views</p>
+  <div class="layer">
+    <div class="file-grid">
+      <div class="file-card" onclick="show('emadapter')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">EmergencyAdapter.java</div>
+        <div class="file-desc">Populates emergency tile grid (RecyclerView)</div>
+      </div>
+      <div class="file-card" onclick="show('stepadapter')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">StepPagerAdapter.java</div>
+        <div class="file-desc">Creates one StepFragment per step for ViewPager2</div>
+      </div>
+      <div class="file-card" onclick="show('hospadapter')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">HospitalAdapter.java</div>
+        <div class="file-desc">Renders hospital cards with call button</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-row"><i class="ti ti-arrow-down" aria-hidden="true"></i> reads from</div>
+
+  <p class="section-title">Data layer — offline engine</p>
+  <div class="layer">
+    <div class="file-grid">
+      <div class="file-card" onclick="show('datamanager')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">DataManager.java</div>
+        <div class="file-desc">Singleton — loads JSON once, serves everywhere</div>
+      </div>
+      <div class="file-card" onclick="show('tts')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">TTSManager.java</div>
+        <div class="file-desc">Singleton — Kannada/English Text-To-Speech</div>
+      </div>
+      <div class="file-card" onclick="show('emergency')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">Emergency.java</div>
+        <div class="file-desc">Model: id, name, nameKannada, severity, steps[]</div>
+      </div>
+      <div class="file-card" onclick="show('step')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">Step.java</div>
+        <div class="file-desc">Model: instruction, Do text, Don't text — both languages</div>
+      </div>
+      <div class="file-card" onclick="show('hospitalmol')">
+        <span class="badge badge-java">JAVA</span>
+        <div class="file-name">Hospital.java</div>
+        <div class="file-desc">Model: name, phone, lat/lng, distanceKm (runtime)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-row"><i class="ti ti-arrow-down" aria-hidden="true"></i> parsed from</div>
+
+  <p class="section-title">Data files — offline JSON stored in res/raw/</p>
+  <div class="layer">
+    <div class="file-grid">
+      <div class="file-card" onclick="show('jsonem')">
+        <span class="badge badge-json">JSON</span>
+        <div class="file-name">emergencies.json</div>
+        <div class="file-desc">10 emergencies, each with 3–5 steps in English + Kannada</div>
+      </div>
+      <div class="file-card" onclick="show('jsonhosp')">
+        <span class="badge badge-json">JSON</span>
+        <div class="file-name">hospitals.json</div>
+        <div class="file-desc">8 Bengaluru hospitals with GPS coordinates and phone numbers</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="section-title">UI definitions — XML layouts in res/layout/</p>
+  <div class="layer">
+    <div class="file-grid">
+      <div class="file-card" onclick="show('layoutmain')">
+        <span class="badge badge-xml">XML</span>
+        <div class="file-name">activity_main.xml</div>
+        <div class="file-desc">ScrollView with header, SOS button, RecyclerView grid</div>
+      </div>
+      <div class="file-card" onclick="show('layoutstep')">
+        <span class="badge badge-xml">XML</span>
+        <div class="file-name">activity_step_detail.xml</div>
+        <div class="file-desc">Header + ViewPager2 + prev/next bottom bar</div>
+      </div>
+      <div class="file-card" onclick="show('layoutfrag')">
+        <span class="badge badge-xml">XML</span>
+        <div class="file-name">fragment_step.xml</div>
+        <div class="file-desc">One step card — number, title, instruction, Do/Don't panels</div>
+      </div>
+      <div class="file-card" onclick="show('layouthosp')">
+        <span class="badge badge-xml">XML</span>
+        <div class="file-name">activity_hospital.xml</div>
+        <div class="file-desc">Blue header, offline badge, 108 button, RecyclerView</div>
+      </div>
+      <div class="file-card" onclick="show('layouttile')">
+        <span class="badge badge-xml">XML</span>
+        <div class="file-name">item_emergency_tile.xml</div>
+        <div class="file-desc">One emergency card — severity strip, emoji, English, Kannada</div>
+      </div>
+      <div class="file-card" onclick="show('layouthospitem')">
+        <span class="badge badge-xml">XML</span>
+        <div class="file-name">item_hospital.xml</div>
+        <div class="file-desc">Hospital card — rank, name, distance chip, call button</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="section-title">Config files</p>
+  <div class="layer">
+    <div class="file-grid">
+      <div class="file-card" onclick="show('manifest')">
+        <span class="badge badge-xml">XML</span>
+        <div class="file-name">AndroidManifest.xml</div>
+        <div class="file-desc">Declares all Activities, permissions (CALL_PHONE, LOCATION)</div>
+      </div>
+      <div class="file-card" onclick="show('buildgradle')">
+        <span class="badge badge-gradle">GRADLE</span>
+        <div class="file-name">app/build.gradle</div>
+        <div class="file-desc">Libraries, SDK version, ViewBinding toggle</div>
+      </div>
+      <div class="file-card" onclick="show('themes')">
+        <span class="badge badge-xml">XML</span>
+        <div class="file-name">themes.xml / colors.xml</div>
+        <div class="file-desc">Red brand color, severity palette, text styles</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail Panel -->
+  <div class="detail-panel" id="detail">
+    <span class="detail-close" onclick="closeDetail()"><i class="ti ti-x" aria-hidden="true"></i> close</span>
+    <div class="detail-title" id="detail-title"></div>
+    <div class="detail-body" id="detail-body"></div>
+  </div>
+</div>
+
+<script>
+const info = {
+  splash: {
+    title: "SplashActivity.java — the app's entry point",
+    body: `This is the very first screen the user sees — a red screen with the app name. But its real job is invisible: it immediately starts a <code>background thread</code> (using <code>ExecutorService</code>) to load all JSON data into memory.<br><br>Why a background thread? Android's UI runs on the <code>main thread</code>. If you read files on the main thread, the screen freezes. By offloading to a background thread, the splash renders instantly while data loads in parallel.<br><br>Once loading is done, it waits for the minimum splash time (1.2 seconds), then uses <code>Handler.postDelayed()</code> to switch to MainActivity on the main thread. This ensures the app loads in under 500ms after the splash.`
+  },
+  main: {
+    title: "MainActivity.java — the home screen brain",
+    body: `This Activity does five things:<br><br>1. <b>Grid setup:</b> Asks DataManager for the list of emergencies and gives it to EmergencyAdapter, which populates a RecyclerView in a 2-column grid.<br><br>2. <b>Search:</b> A TextWatcher listens to every keystroke in the search box and calls <code>filterEmergencies()</code> which filters by English name or Kannada name and updates the adapter.<br><br>3. <b>SOS button:</b> One tap calls <code>Intent(ACTION_CALL, "tel:108")</code>. It first checks for <code>CALL_PHONE</code> permission — if not granted, it requests it using <code>ActivityCompat.requestPermissions()</code>.<br><br>4. <b>Hospital navigation:</b> Tapping the blue hospital card creates an Intent to start HospitalActivity.<br><br>5. <b>TTS init:</b> Initialises TTSManager on startup so it's ready when the user enters a step screen. Plays a Kannada welcome message.`
+  },
+  stepdetail: {
+    title: "StepDetailActivity.java — the step-by-step engine",
+    body: `This is the most complex Activity. It receives an <code>emergency_id</code> String from the Intent, looks it up in DataManager, and gets the list of steps.<br><br><b>ViewPager2:</b> Each step becomes a Fragment. StepPagerAdapter creates them. ViewPager2 handles all the swipe animation between steps automatically.<br><br><b>Progress bar:</b> A ProgressBar updates its value (<code>setProgress(position + 1)</code>) every time the page changes via <code>OnPageChangeCallback</code>.<br><br><b>Audio button:</b> One large ImageButton toggles <code>audioEnabled</code>. When ON, it calls <code>TTSManager.speakStep()</code> immediately for the current step and for every subsequent page swipe.<br><br><b>Navigation buttons:</b> Prev/Next move ViewPager2 with <code>setCurrentItem()</code>. On the last step, Next shows "Done" and calls <code>finish()</code> to go back.`
+  },
+  stepfrag: {
+    title: "StepFragment.java — one page in the swiper",
+    body: `Each Step object becomes one Fragment. The fragment is stateless — all its data is passed in via a <code>Bundle</code> (arguments) when <code>StepFragment.newInstance(step)</code> is called by the adapter.<br><br>In <code>onViewCreated()</code> it reads those arguments back out and populates 9 TextViews: step number, English title, Kannada title, English instruction, Kannada instruction, Do text, Do Kannada, Don't text, Don't Kannada.<br><br>The layout uses two CardViews — the main instruction card and the Do/Don't side-by-side cards in green and red. This makes them visually distinct even under stress.`
+  },
+  hospital: {
+    title: "HospitalActivity.java — GPS-aware hospital finder",
+    body: `Uses <code>FusedLocationProviderClient</code> from Google Play Services to get the device's last known GPS location.<br><br>If location permission is granted it calls <code>getLastLocation()</code>. If not, it requests permission — but crucially, it <b>also immediately loads hospitals using Bengaluru's city center coordinates</b> as a default. This means users see hospitals even if they deny location.<br><br><b>Haversine formula:</b> For each hospital, it calculates straight-line distance from the user's GPS using the haversine formula (the formula for distance between two points on a sphere). It then estimates drive time assuming 20 km/h average city traffic speed.<br><br>Hospitals are sorted by distance and the nearest 5 are shown. Each card has a "Call" button that opens the phone dialler.`
+  },
+  emadapter: {
+    title: "EmergencyAdapter.java — RecyclerView bridge",
+    body: `This is the standard Android RecyclerView Adapter pattern. It holds a list of Emergency objects and creates a ViewHolder for each one.<br><br><code>onCreateViewHolder()</code> inflates the XML layout <code>item_emergency_tile.xml</code> once per visible tile.<br><br><code>onBindViewHolder()</code> is called for each tile — it sets the emoji icon, English name, Kannada name, and severity strip color. The severity strip color is set programmatically: <code>critical</code> = red, <code>warning</code> = orange, <code>normal</code> = blue.<br><br><code>updateList()</code> is called by the search filter to swap in a filtered list and call <code>notifyDataSetChanged()</code> to refresh the grid.`
+  },
+  stepadapter: {
+    title: "StepPagerAdapter.java — ViewPager2 adapter",
+    body: `Extends <code>FragmentStateAdapter</code>, the correct adapter class for ViewPager2 when each page is a Fragment.<br><br>Its only real job is <code>createFragment(position)</code> — it calls <code>StepFragment.newInstance(steps.get(position))</code> to create the right Fragment for each page position.<br><br><code>FragmentStateAdapter</code> handles memory management automatically — it destroys off-screen fragments and recreates them when needed, keeping memory usage low even with many steps.`
+  },
+  hospadapter: {
+    title: "HospitalAdapter.java — hospital list renderer",
+    body: `Standard RecyclerView Adapter for the hospital list. Each ViewHolder binds one Hospital object to the card layout.<br><br>It displays: rank number, hospital name, address, distance (formatted to 1 decimal: <code>String.format("%.1f km", h.getDistanceKm())</code>), estimated drive time, 24/7 status (green if open, orange if not), and phone number.<br><br>The Call button uses <code>Intent(ACTION_DIAL, Uri.parse("tel:" + phone))</code> — this opens the dialler pre-filled with the number. It uses ACTION_DIAL (not ACTION_CALL) so the user confirms before calling, avoiding accidental calls.`
+  },
+  datamanager: {
+    title: "DataManager.java — the offline data engine",
+    body: `This is a <b>Singleton</b> — only one instance exists in the whole app, accessed via <code>DataManager.getInstance()</code>. This ensures data is loaded once and shared everywhere.<br><br><code>preloadData(context)</code> is called once from SplashActivity on a background thread. It reads two raw resource files using <code>context.getResources().openRawResource(R.raw.emergencies)</code>, reads them line by line into a String, then uses <b>Gson</b> to parse that JSON string into Java objects.<br><br>Gson uses <code>TypeToken&lt;List&lt;Emergency&gt;&gt;</code> to know which class to deserialise into. The JSON field names must exactly match the Java getter/setter names (e.g. JSON <code>"nameKannada"</code> → <code>getNameKannada()</code>).`
+  },
+  tts: {
+    title: "TTSManager.java — Text-To-Speech engine",
+    body: `Another Singleton. Wraps Android's built-in <code>TextToSpeech</code> API.<br><br><b>Language detection:</b> On init it tries to set Kannada: <code>new Locale("kn", "IN")</code>. If the device doesn't have Kannada TTS installed, it falls back to English — this is detected by the return value of <code>tts.setLanguage()</code>.<br><br><code>speakStep(kannadaText, englishText)</code> picks the right text based on the current language flag and calls <code>tts.speak(text, QUEUE_FLUSH, null, utteranceId)</code>. QUEUE_FLUSH means it interrupts any current speech immediately.<br><br>TTS must be shut down with <code>tts.shutdown()</code> when the Activity is destroyed — otherwise it leaks a system resource.`
+  },
+  emergency: {
+    title: "Emergency.java — the emergency data model",
+    body: `A plain Java class (POJO) with private fields and public getters/setters. This is the structure Gson maps the JSON into.<br><br>Fields: <code>id</code> (unique string like "snake_bite"), <code>name</code>, <code>nameKannada</code>, <code>icon</code> (emoji), <code>severity</code> ("critical"/"warning"/"normal"), <code>description</code>, <code>descriptionKannada</code>, and <code>steps</code> (a <code>List&lt;Step&gt;</code>).<br><br>The <code>id</code> field is what gets passed between Activities via Intent extras — it's safer than passing an index number because the list order could change.`
+  },
+  step: {
+    title: "Step.java — one step in an emergency",
+    body: `Another POJO. Fields: <code>stepNumber</code> (int), <code>title</code>, <code>titleKannada</code>, <code>instruction</code>, <code>instructionKannada</code>, <code>doText</code>, <code>doTextKannada</code>, <code>dontText</code>, <code>dontTextKannada</code>, <code>drawableIcon</code>.<br><br>The Kannada fields are what get read out loud by TTSManager in audio mode. They're also what get displayed below the English text on each step page — giving bilingual coverage without switching languages.`
+  },
+  hospitalmol: {
+    title: "Hospital.java — hospital data model",
+    body: `Holds both static data (from JSON) and runtime-calculated data.<br><br><b>Static (from JSON):</b> name, nameKannada, address, phone, latitude, longitude, isOpen24x7, type.<br><br><b>Runtime (calculated in HospitalActivity):</b> <code>distanceKm</code> and <code>estimatedMinutes</code>. These are NOT in the JSON — they're calculated after the GPS coordinates are known and injected directly into the model object using setters. This keeps the JSON clean while letting the model carry all the info the adapter needs.`
+  },
+  jsonem: {
+    title: "emergencies.json — the heart of the app",
+    body: `Stored in <code>res/raw/</code>, which means it's packaged inside the APK and never needs the internet. It contains 10 emergency types, each with 3–5 steps.<br><br>Each step has content in both English and Kannada. The structure mirrors the Java model exactly so Gson can parse it directly.<br><br>The <code>severity</code> field ("critical", "warning", "normal") drives the color of the strip at the top of each tile — red, orange, or blue. This gives instant visual triage without reading any text.<br><br>To add more emergencies: just add more objects to the JSON array. No code changes needed.`
+  },
+  jsonhosp: {
+    title: "hospitals.json — offline hospital database",
+    body: `Also in <code>res/raw/</code>. Contains 8 real Bengaluru government and private hospitals with their actual GPS coordinates and phone numbers.<br><br>The latitude/longitude values are used with the Haversine formula to calculate distances at runtime. The JSON itself never changes — it's always the same 8 hospitals. What changes is their distance from the user, which is calculated live.<br><br>To add hospitals for other cities: just add more entries. The sorting logic will automatically rank them by distance.`
+  },
+  layoutmain: {
+    title: "activity_main.xml — home screen layout",
+    body: `Uses a <code>CoordinatorLayout</code> as the root (Android best practice for screens with scrolling content and floating buttons).<br><br>Inside is a <code>NestedScrollView</code> containing a vertical <code>LinearLayout</code>. The header (red background with app name) is a separate LinearLayout that doesn't scroll — it sticks at the top.<br><br>Below the header: search bar (inside a CardView for elevation), the red SOS ExtendedFloatingActionButton (full-width), the blue hospital button (CardView), a section label, and the RecyclerView grid.<br><br>The RecyclerView has <code>nestedScrollingEnabled="false"</code> so it doesn't conflict with the outer NestedScrollView — it measures its full height and lets the outer scroll handle scrolling.`
+  },
+  layoutstep: {
+    title: "activity_step_detail.xml — step screen layout",
+    body: `A vertical LinearLayout with four zones:<br><br>1. <b>Header</b> (red background): back button, emergency title, audio button<br>2. <b>ProgressBar</b>: a horizontal bar showing current step out of total<br>3. <b>ViewPager2</b>: takes all remaining space (<code>layout_weight="1"</code>) — this is where each StepFragment is displayed<br>4. <b>Bottom nav bar</b>: Previous and Next buttons<br><br>The key layout trick is <code>layout_height="0dp"</code> + <code>layout_weight="1"</code> on the ViewPager2. In a LinearLayout, this means "take all remaining vertical space after the other fixed-height elements". This ensures the step content always fills the screen regardless of device size.`
+  },
+  layoutfrag: {
+    title: "fragment_step.xml — one step page",
+    body: `A NestedScrollView so long instructions can scroll. Inside, two CardViews:<br><br><b>Card 1 (main):</b> Red header bar with step number circle + English and Kannada titles. Below: illustration placeholder (a FrameLayout with a gradient background and emoji), English instruction, a divider, Kannada instruction.<br><br><b>Card 2 (Do/Don't):</b> A horizontal LinearLayout with two equal-weight CardViews side by side. Left = green background (Do), right = red background (Don't). Each shows the English text and Kannada text below it.<br><br>The IDs (<code>tv_step_num</code>, <code>tv_step_title</code>, <code>tv_step_title_kn</code> etc.) must exactly match what StepFragment.java calls <code>findViewById()</code> with — that was the bug you just fixed!`
+  },
+  layouthosp: {
+    title: "activity_hospital.xml — hospital screen layout",
+    body: `A vertical LinearLayout with:<br><br>1. Blue header with back button and title<br>2. Location status text (updates to "Using your GPS" or "Using default")<br>3. Offline badge (yellow pill)<br>4. Red 108 Call button<br>5. RecyclerView with <code>layout_weight="1"</code> to fill remaining space<br><br>The blue color (<code>colorHospitalBlue = #1565C0</code>) is intentionally different from the red emergency color — blue signals information/navigation, red signals emergency action.`
+  },
+  layouttile: {
+    title: "item_emergency_tile.xml — one grid tile",
+    body: `A CardView (for elevation and rounded corners) containing a LinearLayout with:<br><br>1. <b>Severity strip:</b> A View with height 4dp at the top — its background color is set programmatically in EmergencyAdapter based on severity<br>2. <b>Icon:</b> A TextView showing the emoji, inside a circle background drawable<br>3. <b>English name:</b> Bold 13sp text<br>4. <b>Kannada name:</b> Lighter 11sp text below<br><br>The CardView has <code>foreground="?android:attr/selectableItemBackground"</code> which gives the ripple effect when tapped — that's the standard Android touch feedback.`
+  },
+  layouthospitem: {
+    title: "item_hospital.xml — one hospital row card",
+    body: `A CardView containing a horizontal LinearLayout with three zones:<br><br>1. <b>Rank badge:</b> A circle TextView with a green background showing "1", "2", "3" etc.<br>2. <b>Info column:</b> Name (bold), address, a row of chip-style badges (distance, time, open status), phone number<br>3. <b>Call button:</b> An outlined MaterialButton with a phone emoji<br><br>The chip backgrounds are small rectangular drawables with rounded corners in blue, purple, and green — each a separate XML file in res/drawable/.`
+  },
+  manifest: {
+    title: "AndroidManifest.xml — the app's identity card",
+    body: `Every Android app must have this file. It tells the operating system everything about the app:<br><br><b>Permissions:</b> <code>CALL_PHONE</code> (to call 108), <code>ACCESS_FINE_LOCATION</code> (GPS for hospital sorting), <code>ACCESS_COARSE_LOCATION</code> (approximate location fallback).<br><br><b>Activities declared:</b> SplashActivity (marked as LAUNCHER — this is what appears in the phone's app drawer), MainActivity, StepDetailActivity, HospitalActivity. Each has <code>android:exported</code> set correctly — only SplashActivity needs <code>exported="true"</code> because it's the entry point.<br><br><b>Parent activities:</b> Setting <code>parentActivityName</code> enables the back arrow in the ActionBar automatically.`
+  },
+  buildgradle: {
+    title: "app/build.gradle — the dependency manifest",
+    body: `Tells Android Studio which libraries to download and include:<br><br><code>androidx.appcompat</code> — modern UI components that work on older Android<br><code>material</code> — MaterialButton, ExtendedFloatingActionButton, CardView styles<br><code>constraintlayout</code> — flexible layout engine<br><code>viewpager2</code> — the swipeable step pages<br><code>recyclerview</code> — the scrollable grid and list<br><code>navigation-fragment/ui</code> — screen navigation framework<br><code>gson</code> — JSON to Java object parsing<br><code>play-services-location</code> — FusedLocationProviderClient for GPS<br><br><code>viewBinding true</code> enables ViewBinding — a type-safe alternative to <code>findViewById()</code> (not yet used in this version but ready to enable).`
+  },
+  themes: {
+    title: "themes.xml / colors.xml / dimens.xml — the design system",
+    body: `<b>colors.xml</b> defines every color once: <code>colorPrimary = #E53935</code> (the red), severity colors (critical red, warning orange, normal blue), text colors, surface colors. Using named colors means you can change the whole app's palette in one file.<br><br><b>themes.xml</b> defines reusable styles: <code>Theme.PrathamChikitse</code> sets the status bar color, background color, and primary color for all Material components. <code>Theme.PrathamChikitse.Splash</code> extends it but adds a full-screen window with the red splash background.<br><br><b>dimens.xml</b> defines spacing constants like <code>spacing_md = 12dp</code> so all padding is consistent throughout the app.`
+  }
+};
+
+function show(key) {
+  const d = info[key];
+  if (!d) return;
+  document.getElementById('detail-title').textContent = d.title;
+  document.getElementById('detail-body').innerHTML = d.body;
+  const panel = document.getElementById('detail');
+  panel.classList.add('visible');
+  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function closeDetail() {
+  document.getElementById('detail').classList.remove('visible');
+}
+</script>

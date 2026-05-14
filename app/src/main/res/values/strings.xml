@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ</string>
+    <string name="app_name_en">Pratham Chikitse</string>
+    <string name="tagline">Offline Emergency First Aid Guide</string>
+    <string name="sos_label">EMERGENCY SOS — 108</string>
+    <string name="sos_sub">Tap to call ambulance immediately</string>
+    <string name="hospitals_btn">Nearest Hospitals</string>
+    <string name="search_hint">Search emergency (ತುರ್ತು ಹುಡುಕಿ)…</string>
+    <string name="select_emergency">Select Emergency Type</string>
+    <string name="offline_mode">Offline Mode — Works without internet</string>
+    <string name="audio_on">Audio ON</string>
+    <string name="audio_off">Audio OFF</string>
+    <string name="do_label">✓ DO</string>
+    <string name="dont_label">✗ DON\'T</string>
+    <string name="next_step">Next Step →</string>
+    <string name="prev_step">← Previous</string>
+    <string name="call_label">Call</string>
+    <string name="open_24_7">Open 24/7</string>
+    <string name="nearest_hospitals">Nearest Hospitals — ಹತ್ತಿರದ ಆಸ್ಪತ್ರೆ</string>
+</resources>

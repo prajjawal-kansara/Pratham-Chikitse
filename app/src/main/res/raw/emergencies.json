@@ -1,0 +1,336 @@
+{
+  "emergencies": [
+    {
+      "id": "snake_bite",
+      "name": "Snake Bite",
+      "nameKannada": "ಹಾವು ಕಡಿತ",
+      "icon": "🐍",
+      "severity": "critical",
+      "description": "Immediate action needed. Keep patient calm.",
+      "descriptionKannada": "ತಕ್ಷಣ ಕ್ರಮ ತೆಗೆದುಕೊಳ್ಳಿ. ರೋಗಿಯನ್ನು ಶಾಂತವಾಗಿಡಿ.",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Move away from the snake",
+          "titleKannada": "ಹಾವಿನಿಂದ ದೂರ ಸರಿಯಿರಿ",
+          "instruction": "Get the person away from the snake immediately. Do not try to catch or kill the snake. Note the color and shape of the snake if possible.",
+          "instructionKannada": "ವ್ಯಕ್ತಿಯನ್ನು ತಕ್ಷಣ ಹಾವಿನಿಂದ ದೂರ ಕರೆದೊಯ್ಯಿರಿ. ಹಾವನ್ನು ಹಿಡಿಯಲು ಅಥವಾ ಕೊಲ್ಲಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ.",
+          "doText": "Note snake's appearance for hospital identification",
+          "doTextKannada": "ಆಸ್ಪತ್ರೆ ಗುರುತಿಗಾಗಿ ಹಾವಿನ ನೋಟವನ್ನು ಗಮನಿಸಿ",
+          "dontText": "Never try to catch or kill the snake",
+          "dontTextKannada": "ಹಾವನ್ನು ಎಂದಿಗೂ ಹಿಡಿಯಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ",
+          "drawableIcon": "ic_step_move_away"
+        },
+        {
+          "stepNumber": 2,
+          "title": "Keep patient calm and still",
+          "titleKannada": "ರೋಗಿಯನ್ನು ಶಾಂತ ಮತ್ತು ಸ್ಥಿರವಾಗಿ ಇಡಿ",
+          "instruction": "Lay the person down flat. Keep the bitten limb below heart level. Immobilize the affected area. Panic increases venom spread through the bloodstream.",
+          "instructionKannada": "ವ್ಯಕ್ತಿಯನ್ನು ಮಲಗಿಸಿ. ಕಡಿದ ಅಂಗವನ್ನು ಹೃದಯ ಮಟ್ಟಕ್ಕಿಂತ ಕೆಳಗೆ ಇಡಿ. ಭಯ ವಿಷದ ಹರಡುವಿಕೆಯನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ.",
+          "doText": "Remove tight jewellery or clothing near the bite",
+          "doTextKannada": "ಕಡಿದ ಸ್ಥಳದ ಬಳಿ ಒಡವೆ ಅಥವಾ ಬಟ್ಟೆಯನ್ನು ತೆಗೆಯಿರಿ",
+          "dontText": "Never let the victim walk or run",
+          "dontTextKannada": "ಎಂದಿಗೂ ಬಲಿಪಶುವನ್ನು ನಡೆಸಬೇಡಿ",
+          "drawableIcon": "ic_step_calm"
+        },
+        {
+          "stepNumber": 3,
+          "title": "Clean and cover the wound",
+          "titleKannada": "ಗಾಯವನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ ಮತ್ತು ಮುಚ್ಚಿ",
+          "instruction": "Gently clean the bite area with clean water and mild soap. Cover loosely with a clean, dry bandage. Mark the edge of swelling with a pen and note the time.",
+          "instructionKannada": "ಶುದ್ಧ ನೀರು ಮತ್ತು ಮೃದು ಸಾಬೂನಿನಿಂದ ಕಡಿದ ಪ್ರದೇಶವನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ. ಸ್ವಚ್ಛ ಬ್ಯಾಂಡೇಜ್‌ನಿಂದ ಸಡಿಲವಾಗಿ ಮುಚ್ಚಿ.",
+          "doText": "Mark swelling boundary with pen to track spread",
+          "doTextKannada": "ಊದಿಕೆಯ ಗಡಿಯನ್ನು ಗುರುತಿಸಿ",
+          "dontText": "Never apply a tourniquet or ice",
+          "dontTextKannada": "ಟೂರ್ನಿಕ್ಯೂ ಅಥವಾ ಮಂಜು ಹಾಕಬೇಡಿ",
+          "drawableIcon": "ic_step_clean"
+        },
+        {
+          "stepNumber": 4,
+          "title": "Call for help immediately",
+          "titleKannada": "ತಕ್ಷಣ ಸಹಾಯಕ್ಕಾಗಿ ಕರೆ ಮಾಡಿ",
+          "instruction": "Call 108 for an ambulance immediately. Tell them it is a snake bite, the location, and any symptoms you observe such as swelling, breathing difficulty, or unconsciousness.",
+          "instructionKannada": "ತಕ್ಷಣ 108 ಗೆ ಕರೆ ಮಾಡಿ. ಇದು ಹಾವಿನ ಕಡಿತ ಎಂದು ಹೇಳಿ, ಸ್ಥಳ ಮತ್ತು ನೀವು ಗಮನಿಸಿದ ಯಾವುದೇ ಲಕ್ಷಣಗಳನ್ನು ತಿಳಿಸಿ.",
+          "doText": "Note time of bite — critical for antivenom dosage",
+          "doTextKannada": "ಕಡಿದ ಸಮಯವನ್ನು ಗಮನಿಸಿ — ಪ್ರತಿವಿಷಕ್ಕೆ ಮಹತ್ವದ್ದು",
+          "dontText": "Never give food, water, or alcohol to victim",
+          "dontTextKannada": "ಬಲಿಪಶುವಿಗೆ ಆಹಾರ, ನೀರು ಅಥವಾ ಮದ್ಯ ಕೊಡಬೇಡಿ",
+          "drawableIcon": "ic_step_call"
+        },
+        {
+          "stepNumber": 5,
+          "title": "Monitor and reassure",
+          "titleKannada": "ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ ಮತ್ತು ಸಮಾಧಾನ ಪಡಿಸಿ",
+          "instruction": "Stay with the person until the ambulance arrives. Monitor breathing and pulse. Keep the person warm. Talk calmly to reduce panic. Note any changes in symptoms.",
+          "instructionKannada": "ಆಂಬ್ಯುಲೆನ್ಸ್ ಬರುವವರೆಗೆ ವ್ಯಕ್ತಿಯೊಂದಿಗೆ ಇರಿ. ಉಸಿರಾಟ ಮತ್ತು ನಾಡಿಯನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ.",
+          "doText": "Keep patient warm and speak calmly",
+          "doTextKannada": "ರೋಗಿಯನ್ನು ಬೆಚ್ಚಗಿಡಿ ಮತ್ತು ಶಾಂತವಾಗಿ ಮಾತನಾಡಿ",
+          "dontText": "Never leave the victim alone",
+          "dontTextKannada": "ಬಲಿಪಶುವನ್ನು ಎಂದಿಗೂ ಏಕಾಂಗಿಯಾಗಿ ಬಿಡಬೇಡಿ",
+          "drawableIcon": "ic_step_monitor"
+        }
+      ]
+    },
+    {
+      "id": "heart_attack",
+      "name": "Heart Attack",
+      "nameKannada": "ಹೃದಯಾಘಾತ",
+      "icon": "❤️",
+      "severity": "critical",
+      "description": "Every minute counts. Begin CPR if unconscious.",
+      "descriptionKannada": "ಪ್ರತಿ ನಿಮಿಷವೂ ಮುಖ್ಯ. ಪ್ರಜ್ಞಾಹೀನರಾಗಿದ್ದರೆ CPR ಪ್ರಾರಂಭಿಸಿ.",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Recognize the symptoms",
+          "titleKannada": "ಲಕ್ಷಣಗಳನ್ನು ಗುರುತಿಸಿ",
+          "instruction": "Look for: chest pain or pressure, pain radiating to arm or jaw, shortness of breath, sweating, nausea, and lightheadedness. Act immediately — do not wait.",
+          "instructionKannada": "ಎದೆ ನೋವು, ತೋಳು ಅಥವಾ ದವಡೆಗೆ ನೋವು, ಉಸಿರಾಟ ತೊಂದರೆ, ಬೆವರುವಿಕೆ ಗಮನಿಸಿ.",
+          "doText": "Call 108 immediately even if unsure",
+          "doTextKannada": "ಖಚಿತವಿಲ್ಲದಿದ್ದರೂ ತಕ್ಷಣ 108 ಕರೆ ಮಾಡಿ",
+          "dontText": "Never let patient drive themselves to hospital",
+          "dontTextKannada": "ರೋಗಿಯನ್ನು ಸ್ವಂತ ಗಾಡಿ ಓಡಿಸಲು ಬಿಡಬೇಡಿ",
+          "drawableIcon": "ic_step_symptoms"
+        },
+        {
+          "stepNumber": 2,
+          "title": "Call 108 and give aspirin",
+          "titleKannada": "108 ಕರೆ ಮಾಡಿ ಮತ್ತು ಆಸ್ಪಿರಿನ್ ನೀಡಿ",
+          "instruction": "Call 108 immediately. If available and patient is not allergic, give one 325mg aspirin or four 81mg aspirin. Ask patient to chew it, not swallow whole.",
+          "instructionKannada": "ತಕ್ಷಣ 108 ಕರೆ ಮಾಡಿ. ಲಭ್ಯವಿದ್ದರೆ ಮತ್ತು ಅಲರ್ಜಿ ಇಲ್ಲದಿದ್ದರೆ ಒಂದು 325mg ಆಸ್ಪಿರಿನ್ ನೀಡಿ.",
+          "doText": "Have patient chew the aspirin for faster absorption",
+          "doTextKannada": "ವೇಗದ ಹೀರಿಕೊಳ್ಳುವಿಕೆಗಾಗಿ ಅಗಿಯಲು ಹೇಳಿ",
+          "dontText": "Never give aspirin if patient is allergic to it",
+          "dontTextKannada": "ಅಲರ್ಜಿ ಇದ್ದರೆ ಆಸ್ಪಿರಿನ್ ಕೊಡಬೇಡಿ",
+          "drawableIcon": "ic_step_call"
+        },
+        {
+          "stepNumber": 3,
+          "title": "Rest in comfortable position",
+          "titleKannada": "ಆರಾಮದಾಯಕ ಸ್ಥಿತಿಯಲ್ಲಿ ವಿಶ್ರಾಂತಿ",
+          "instruction": "Help the person sit down or lie in a comfortable position. Loosen any tight clothing around the neck and chest. Keep them calm and reassured.",
+          "instructionKannada": "ವ್ಯಕ್ತಿಯನ್ನು ಕೂರಿಸಿ ಅಥವಾ ಆರಾಮದಾಯಕ ಸ್ಥಾನದಲ್ಲಿ ಮಲಗಿಸಿ. ಕುತ್ತಿಗೆ ಮತ್ತು ಎದೆ ಸುತ್ತ ಬಿಗಿ ಬಟ್ಟೆ ಸಡಿಲಗೊಳಿಸಿ.",
+          "doText": "Loosen collar, tie, or bra straps",
+          "doTextKannada": "ಕಾಲರ್, ಟೈ ಅಥವಾ ಪಟ್ಟಿ ಸಡಿಲಗೊಳಿಸಿ",
+          "dontText": "Never leave the person alone",
+          "dontTextKannada": "ವ್ಯಕ್ತಿಯನ್ನು ಏಕಾಂಗಿಯಾಗಿ ಬಿಡಬೇಡಿ",
+          "drawableIcon": "ic_step_calm"
+        },
+        {
+          "stepNumber": 4,
+          "title": "Begin CPR if unconscious",
+          "titleKannada": "ಪ್ರಜ್ಞಾಹೀನರಾಗಿದ್ದರೆ CPR ಪ್ರಾರಂಭಿಸಿ",
+          "instruction": "If the person becomes unconscious and stops breathing: Place heel of hand on center of chest. Push hard and fast — 100 to 120 compressions per minute. Give 2 rescue breaths after every 30 compressions.",
+          "instructionKannada": "ವ್ಯಕ್ತಿ ಪ್ರಜ್ಞಾಹೀನರಾಗಿ ಉಸಿರಾಟ ನಿಂತರೆ: ಎದೆ ಮಧ್ಯಭಾಗದಲ್ಲಿ ಕೈ ಇಟ್ಟು ಗಟ್ಟಿಯಾಗಿ ಮತ್ತು ವೇಗವಾಗಿ ಒತ್ತಿ.",
+          "doText": "Push chest 5–6 cm deep at 100 compressions/min",
+          "doTextKannada": "ನಿಮಿಷಕ್ಕೆ 100 ಬಾರಿ 5-6 ಸೆಂ.ಮೀ. ಆಳಕ್ಕೆ ಒತ್ತಿ",
+          "dontText": "Never stop CPR until help arrives",
+          "dontTextKannada": "ಸಹಾಯ ಬರುವವರೆಗೆ CPR ನಿಲ್ಲಿಸಬೇಡಿ",
+          "drawableIcon": "ic_step_cpr"
+        }
+      ]
+    },
+    {
+      "id": "burns",
+      "name": "Burns",
+      "nameKannada": "ಸುಡುವಿಕೆ",
+      "icon": "🔥",
+      "severity": "warning",
+      "description": "Cool the burn immediately with water.",
+      "descriptionKannada": "ತಕ್ಷಣ ನೀರಿನಿಂದ ಸುಡುವ ಭಾಗವನ್ನು ತಣ್ಣಗಾಗಿಸಿ.",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Remove from heat source",
+          "titleKannada": "ಶಾಖದ ಮೂಲದಿಂದ ದೂರ ಸರಿಯಿರಿ",
+          "instruction": "Safely remove the person from the heat source. If clothing is on fire: STOP, DROP, and ROLL. Remove burning or hot clothing unless stuck to the skin.",
+          "instructionKannada": "ವ್ಯಕ್ತಿಯನ್ನು ಶಾಖದ ಮೂಲದಿಂದ ದೂರ ಸರಿಸಿ. ಬಟ್ಟೆ ಉರಿಯುತ್ತಿದ್ದರೆ: ನಿಲ್ಲಿ, ಬೀಳಿ, ಉರುಳಿ.",
+          "doText": "Cool the burn immediately with cool running water",
+          "doTextKannada": "ತಕ್ಷಣ ತಣ್ಣೀರಿನಿಂದ ಸುಡುವ ಭಾಗ ತಣ್ಣಗಾಗಿಸಿ",
+          "dontText": "Never remove clothing stuck to burned skin",
+          "dontTextKannada": "ಚರ್ಮಕ್ಕೆ ಅಂಟಿಕೊಂಡ ಬಟ್ಟೆ ತೆಗೆಯಬೇಡಿ",
+          "drawableIcon": "ic_step_remove"
+        },
+        {
+          "stepNumber": 2,
+          "title": "Cool with running water",
+          "titleKannada": "ಹರಿಯುವ ನೀರಿನಿಂದ ತಣ್ಣಗಾಗಿಸಿ",
+          "instruction": "Hold the burned area under cool (not cold or icy) running water for at least 20 minutes. This is the single most important step to reduce pain and prevent deeper damage.",
+          "instructionKannada": "ಕನಿಷ್ಠ 20 ನಿಮಿಷ ತಂಪು ನೀರಿನ ಕೆಳಗೆ ಸುಟ್ಟ ಭಾಗ ಹಿಡಿಯಿರಿ. ಇದು ನೋವು ಕಡಿಮೆ ಮಾಡಲು ಮತ್ತು ಆಳ ಹಾನಿ ತಡೆಯಲು ಅತ್ಯಂತ ಮುಖ್ಯ.",
+          "doText": "Use cool running water for minimum 20 minutes",
+          "doTextKannada": "ಕನಿಷ್ಠ 20 ನಿಮಿಷ ತಂಪು ಹರಿಯುವ ನೀರು ಬಳಸಿ",
+          "dontText": "Never use ice, butter, or toothpaste on burns",
+          "dontTextKannada": "ಮಂಜು, ಬೆಣ್ಣೆ ಅಥವಾ ಟೂತ್‌ಪೇಸ್ಟ್ ಹಾಕಬೇಡಿ",
+          "drawableIcon": "ic_step_water"
+        },
+        {
+          "stepNumber": 3,
+          "title": "Cover the burn",
+          "titleKannada": "ಸುಡುವ ಭಾಗ ಮುಚ್ಚಿ",
+          "instruction": "After cooling, cover loosely with a clean, non-fluffy material such as cling film, a clean plastic bag, or a sterile bandage. This protects from infection and reduces pain.",
+          "instructionKannada": "ತಣ್ಣಗಾದ ನಂತರ, ಸ್ವಚ್ಛ ಪ್ಲಾಸ್ಟಿಕ್ ಚೀಲ ಅಥವಾ ಕ್ಲಿಂಗ್ ಫಿಲ್ಮ್‌ನಿಂದ ಸಡಿಲವಾಗಿ ಮುಚ್ಚಿ.",
+          "doText": "Use cling film or a clean plastic bag to cover",
+          "doTextKannada": "ಕ್ಲಿಂಗ್ ಫಿಲ್ಮ್ ಅಥವಾ ಸ್ವಚ್ಛ ಚೀಲ ಬಳಸಿ",
+          "dontText": "Never use fluffy cotton or burst any blisters",
+          "dontTextKannada": "ಹತ್ತಿ ಬಳಸಬೇಡಿ ಅಥವಾ ಗುಳ್ಳೆ ಒಡೆಯಬೇಡಿ",
+          "drawableIcon": "ic_step_bandage"
+        },
+        {
+          "stepNumber": 4,
+          "title": "Seek medical help",
+          "titleKannada": "ವೈದ್ಯಕೀಯ ಸಹಾಯ ಪಡೆಯಿರಿ",
+          "instruction": "Go to hospital immediately for: burns larger than a palm, burns on face/hands/genitals, deep burns with white or charred skin, chemical or electrical burns, or any burn in a child.",
+          "instructionKannada": "ತಕ್ಷಣ ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಿ: ಅಂಗೈಗಿಂತ ದೊಡ್ಡ ಸುಡುವಿಕೆ, ಮುಖ/ಕೈ/ಗುಪ್ತಾಂಗ ಮೇಲೆ, ಆಳ ಸುಡುವಿಕೆ ಅಥವಾ ಮಕ್ಕಳಲ್ಲಿ ಯಾವುದೇ ಸುಡುವಿಕೆ.",
+          "doText": "Go to hospital for burns larger than your palm",
+          "doTextKannada": "ಅಂಗೈಗಿಂತ ದೊಡ್ಡ ಸುಡುವಿಕೆಗೆ ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಿ",
+          "dontText": "Never ignore burns on face or hands",
+          "dontTextKannada": "ಮುಖ ಅಥವಾ ಕೈ ಮೇಲಿನ ಸುಡುವಿಕೆ ನಿರ್ಲಕ್ಷಿಸಬೇಡಿ",
+          "drawableIcon": "ic_step_hospital"
+        }
+      ]
+    },
+    {
+      "id": "choking",
+      "name": "Choking",
+      "nameKannada": "ಉಸಿರುಗಟ್ಟುವಿಕೆ",
+      "icon": "🫁",
+      "severity": "critical",
+      "description": "Perform Heimlich maneuver immediately.",
+      "descriptionKannada": "ತಕ್ಷಣ ಹೈಮ್ಲಿಕ್ ಕ್ರಮ ಅನ್ವಯಿಸಿ.",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Identify severe choking",
+          "titleKannada": "ತೀವ್ರ ಉಸಿರುಗಟ್ಟುವಿಕೆ ಗುರುತಿಸಿ",
+          "instruction": "Signs of severe choking: cannot cough, speak, or breathe; may clutch throat with hands; face turning blue. If person can cough forcefully, encourage coughing — do not intervene.",
+          "instructionKannada": "ತೀವ್ರ ಉಸಿರುಗಟ್ಟುವಿಕೆ ಸೂಚನೆಗಳು: ಕೆಮ್ಮಲು, ಮಾತನಾಡಲು ಅಥವಾ ಉಸಿರಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ; ಮುಖ ನೀಲಿ ಆಗುತ್ತದೆ.",
+          "doText": "Encourage coughing if they can cough at all",
+          "doTextKannada": "ಕೆಮ್ಮಬಲ್ಲರೆ ಕೆಮ್ಮಲು ಪ್ರೋತ್ಸಾಹಿಸಿ",
+          "dontText": "Never do abdominal thrusts if they can cough",
+          "dontTextKannada": "ಕೆಮ್ಮಬಲ್ಲರೆ ಒತ್ತಡ ಹಾಕಬೇಡಿ",
+          "drawableIcon": "ic_step_symptoms"
+        },
+        {
+          "stepNumber": 2,
+          "title": "Give 5 back blows",
+          "titleKannada": "5 ಬೆನ್ನಿನ ಹೊಡೆತಗಳನ್ನು ನೀಡಿ",
+          "instruction": "Stand to the side and slightly behind the person. Support their chest with one hand, lean them forward. Give 5 sharp blows between the shoulder blades with the heel of your other hand.",
+          "instructionKannada": "ವ್ಯಕ್ತಿಯ ಪಕ್ಕದಲ್ಲಿ ಮತ್ತು ಸ್ವಲ್ಪ ಹಿಂದೆ ನಿಂತುಕೊಳ್ಳಿ. ಭುಜದ ಮೂಳೆಗಳ ನಡುವೆ 5 ಚುರುಕು ಹೊಡೆತಗಳನ್ನು ನೀಡಿ.",
+          "doText": "Use heel of hand firmly between shoulder blades",
+          "doTextKannada": "ಭುಜದ ಮೂಳೆಗಳ ನಡುವೆ ಗಟ್ಟಿಯಾಗಿ ಹೊಡೆಯಿರಿ",
+          "dontText": "Never slap the back with palm flat",
+          "dontTextKannada": "ಅಂಗೈಯಿಂದ ಚಪ್ಪಟೆಯಾಗಿ ಹೊಡೆಯಬೇಡಿ",
+          "drawableIcon": "ic_step_heimlich"
+        },
+        {
+          "stepNumber": 3,
+          "title": "Give 5 abdominal thrusts (Heimlich)",
+          "titleKannada": "5 ಹೊಟ್ಟೆ ಒತ್ತಡ (ಹೈಮ್ಲಿಕ್) ನೀಡಿ",
+          "instruction": "Stand behind the person. Place one foot between their feet. Make a fist with one hand just above navel and below chest. Grab with other hand, pull sharply inward and upward 5 times.",
+          "instructionKannada": "ವ್ಯಕ್ತಿಯ ಹಿಂದೆ ನಿಂತುಕೊಳ್ಳಿ. ಹೊಕ್ಕಳಿನ ಮೇಲೆ ಮತ್ತು ಎದೆಯ ಕೆಳಗೆ ಒಂದು ಕೈ ಮುಷ್ಟಿ ಮಾಡಿ. ಒಳಕ್ಕೆ ಮತ್ತು ಮೇಲಕ್ಕೆ ತೀಕ್ಷ್ಣವಾಗಿ ಎಳೆಯಿರಿ.",
+          "doText": "Thrust sharply inward AND upward",
+          "doTextKannada": "ಒಳಕ್ಕೆ ಮತ್ತು ಮೇಲಕ್ಕೆ ತೀಕ್ಷ್ಣವಾಗಿ ತಳ್ಳಿ",
+          "dontText": "Never do this on pregnant women — use chest thrusts",
+          "dontTextKannada": "ಗರ್ಭಿಣಿ ಮಹಿಳೆಯರಿಗೆ ಇದು ಮಾಡಬೇಡಿ",
+          "drawableIcon": "ic_step_heimlich"
+        },
+        {
+          "stepNumber": 4,
+          "title": "Alternate and call 108",
+          "titleKannada": "ಪರ್ಯಾಯವಾಗಿ ಮಾಡಿ ಮತ್ತು 108 ಕರೆ ಮಾಡಿ",
+          "instruction": "Alternate 5 back blows and 5 abdominal thrusts until the object is dislodged or the person loses consciousness. Call 108 immediately if you cannot clear the airway.",
+          "instructionKannada": "ವಸ್ತು ತೆಗೆಯುವವರೆಗೆ ಅಥವಾ ವ್ಯಕ್ತಿ ಪ್ರಜ್ಞಾಹೀನರಾಗುವವರೆಗೆ ಪರ್ಯಾಯವಾಗಿ ಮಾಡಿ. ತಕ್ಷಣ 108 ಕರೆ ಮಾಡಿ.",
+          "doText": "Keep alternating until object is out or help arrives",
+          "doTextKannada": "ವಸ್ತು ತೆಗೆಯುವವರೆಗೆ ಪರ್ಯಾಯ ಮುಂದುವರಿಸಿ",
+          "dontText": "Never give up — continue until ambulance arrives",
+          "dontTextKannada": "ಎಂದಿಗೂ ಬಿಡಬೇಡಿ — ಆಂಬ್ಯುಲೆನ್ಸ್ ಬರುವವರೆಗೆ ಮುಂದುವರಿಸಿ",
+          "drawableIcon": "ic_step_call"
+        }
+      ]
+    },
+    {
+      "id": "fracture",
+      "name": "Fracture",
+      "nameKannada": "ಮೂಳೆ ಮುರಿತ",
+      "icon": "🦴",
+      "severity": "warning",
+      "description": "Immobilize and support, do not move the patient.",
+      "descriptionKannada": "ಸ್ಥಿರಗೊಳಿಸಿ, ರೋಗಿಯನ್ನು ಚಲಿಸಬೇಡಿ.",
+      "steps": [
+        {"stepNumber": 1, "title": "Keep the patient still", "titleKannada": "ರೋಗಿಯನ್ನು ಸ್ಥಿರವಾಗಿ ಇಡಿ", "instruction": "Tell the person to stay still. Do not try to straighten the broken bone. Support the injured area in the position you find it.", "instructionKannada": "ವ್ಯಕ್ತಿಗೆ ಸ್ಥಿರವಾಗಿ ಇರಲು ಹೇಳಿ. ಮುರಿದ ಮೂಳೆ ನೇರ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ.", "doText": "Support the injured limb in the position found", "doTextKannada": "ಗಾಯಗೊಂಡ ಅಂಗವನ್ನು ಕಂಡ ಸ್ಥಿತಿಯಲ್ಲಿ ಆಧರಿಸಿ", "dontText": "Never try to realign or straighten the bone", "dontTextKannada": "ಮೂಳೆ ನೇರ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ", "drawableIcon": "ic_step_calm"},
+        {"stepNumber": 2, "title": "Immobilize with splint", "titleKannada": "ಸ್ಪ್ಲಿಂಟ್‌ನಿಂದ ಸ್ಥಿರಗೊಳಿಸಿ", "instruction": "Use a makeshift splint: a board, rolled newspaper, or sticks. Pad with cloth. Extend the splint beyond joints above and below the fracture. Tie gently — not too tight.", "instructionKannada": "ಹಲಗೆ, ಸುತ್ತಿದ ಪತ್ರಿಕೆ ಅಥವಾ ಕೋಲು ಬಳಸಿ ಸ್ಪ್ಲಿಂಟ್ ಮಾಡಿ. ಬಟ್ಟೆ ಹಾಕಿ. ಮುರಿತದ ಮೇಲೆ ಮತ್ತು ಕೆಳಗಿನ ಕೀಲುಗಳಾಚೆ ವಿಸ್ತರಿಸಿ.", "doText": "Check circulation below splint every 10 minutes", "doTextKannada": "ಪ್ರತಿ 10 ನಿಮಿಷ ಸ್ಪ್ಲಿಂಟ್ ಕೆಳಗೆ ರಕ್ತ ಪರಿಚಲನೆ ಪರಿಶೀಲಿಸಿ", "dontText": "Never tie splint directly on the fracture site", "dontTextKannada": "ಮುರಿದ ಸ್ಥಳದ ಮೇಲೆ ಸ್ಪ್ಲಿಂಟ್ ಕಟ್ಟಬೇಡಿ", "drawableIcon": "ic_step_bandage"},
+        {"stepNumber": 3, "title": "Apply ice and elevate", "titleKannada": "ಮಂಜು ಹಾಕಿ ಮತ್ತು ಮೇಲೆತ್ತಿ", "instruction": "Apply ice wrapped in cloth for 20 minutes to reduce swelling. If safe to do so, elevate the injured limb above heart level. Do not apply ice directly on skin.", "instructionKannada": "ಊದಿಕೆ ಕಡಿಮೆ ಮಾಡಲು 20 ನಿಮಿಷ ಬಟ್ಟೆಯಲ್ಲಿ ಸುತ್ತಿ ಮಂಜು ಹಾಕಿ. ಸಾಧ್ಯವಾದರೆ ಗಾಯಗೊಂಡ ಅಂಗ ಹೃದಯ ಮಟ್ಟಕ್ಕಿಂತ ಮೇಲೆ ಇಡಿ.", "doText": "Wrap ice in cloth before applying — 20 min on, 20 off", "doTextKannada": "ಬಟ್ಟೆಯಲ್ಲಿ ಸುತ್ತಿ ಮಂಜು ಹಾಕಿ — 20 ನಿಮಿಷ ಹಾಕಿ, 20 ನಿಮಿಷ ತೆಗೆಯಿರಿ", "dontText": "Never apply ice directly on bare skin", "dontTextKannada": "ನೇರ ಚರ್ಮದ ಮೇಲೆ ಮಂಜು ಹಾಕಬೇಡಿ", "drawableIcon": "ic_step_water"},
+        {"stepNumber": 4, "title": "Get X-ray at hospital", "titleKannada": "ಆಸ್ಪತ್ರೆಯಲ್ಲಿ X-ರೇ ತೆಗೆದುಕೊಳ್ಳಿ", "instruction": "All suspected fractures must be confirmed by X-ray at a hospital. Transport patient carefully. For spine or neck injuries, do not move the person — call 108 and wait.", "instructionKannada": "ಎಲ್ಲ ಶಂಕಿತ ಮುರಿತಗಳನ್ನು ಆಸ್ಪತ್ರೆಯಲ್ಲಿ X-ರೇ ಮೂಲಕ ದೃಢೀಕರಿಸಬೇಕು. ಬೆನ್ನುಮೂಳೆ ಅಥವಾ ಕತ್ತಿನ ಗಾಯಕ್ಕೆ ವ್ಯಕ್ತಿಯನ್ನು ಚಲಿಸಬೇಡಿ.", "doText": "Call 108 for spine/neck injuries — do not move", "doTextKannada": "ಬೆನ್ನು/ಕತ್ತು ಗಾಯಕ್ಕೆ 108 ಕರೆ ಮಾಡಿ — ಚಲಿಸಬೇಡಿ", "dontText": "Never move patient with suspected neck injury", "dontTextKannada": "ಶಂಕಿತ ಕತ್ತಿನ ಗಾಯದ ರೋಗಿ ಚಲಿಸಬೇಡಿ", "drawableIcon": "ic_step_hospital"}
+      ]
+    },
+    {
+      "id": "bleeding",
+      "name": "Severe Bleeding",
+      "nameKannada": "ತೀವ್ರ ರಕ್ತಸ್ರಾವ",
+      "icon": "🩸",
+      "severity": "critical",
+      "description": "Apply direct pressure to stop bleeding.",
+      "descriptionKannada": "ರಕ್ತಸ್ರಾವ ನಿಲ್ಲಿಸಲು ನೇರ ಒತ್ತಡ ಹಾಕಿ.",
+      "steps": [
+        {"stepNumber": 1, "title": "Apply direct pressure", "titleKannada": "ನೇರ ಒತ್ತಡ ಹಾಕಿ", "instruction": "Use a clean cloth or bandage and press firmly on the wound. Maintain steady pressure without lifting. If blood soaks through, add more cloth on top — do not remove the original.", "instructionKannada": "ಸ್ವಚ್ಛ ಬಟ್ಟೆ ಅಥವಾ ಬ್ಯಾಂಡೇಜ್ ಬಳಸಿ ಗಾಯದ ಮೇಲೆ ಗಟ್ಟಿಯಾಗಿ ಒತ್ತಿ ಹಿಡಿಯಿರಿ.", "doText": "Keep pressing for at least 15 minutes without lifting", "doTextKannada": "ಕನಿಷ್ಠ 15 ನಿಮಿಷ ಎತ್ತದೆ ಒತ್ತಿ ಹಿಡಿಯಿರಿ", "dontText": "Never remove soaked cloth — add more on top", "dontTextKannada": "ನೆನೆದ ಬಟ್ಟೆ ತೆಗೆಯಬೇಡಿ — ಮೇಲೆ ಮತ್ತಷ್ಟು ಹಾಕಿ", "drawableIcon": "ic_step_bandage"},
+        {"stepNumber": 2, "title": "Elevate the injured area", "titleKannada": "ಗಾಯಗೊಂಡ ಭಾಗ ಮೇಲೆತ್ತಿ", "instruction": "If possible, raise the injured area above heart level. This reduces blood pressure at the wound and slows bleeding. Support the limb with pillows or rolled clothing.", "instructionKannada": "ಸಾಧ್ಯವಾದರೆ ಗಾಯಗೊಂಡ ಭಾಗ ಹೃದಯ ಮಟ್ಟಕ್ಕಿಂತ ಮೇಲೆ ಎತ್ತಿ. ಇದು ಗಾಯದಲ್ಲಿ ರಕ್ತದ ಒತ್ತಡ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ.", "doText": "Support elevated limb to maintain the position", "doTextKannada": "ಮೇಲೆತ್ತಿದ ಅಂಗ ಸ್ಥಾನ ಕಾಪಾಡಲು ಆಧಾರ ನೀಡಿ", "dontText": "Never elevate if fracture is suspected", "dontTextKannada": "ಮೂಳೆ ಮುರಿದಿದ್ದರೆ ಮೇಲೆ ಎತ್ತಬೇಡಿ", "drawableIcon": "ic_step_calm"},
+        {"stepNumber": 3, "title": "Call 108 for severe bleeding", "titleKannada": "ತೀವ್ರ ರಕ್ತಸ್ರಾವಕ್ಕೆ 108 ಕರೆ ಮಾಡಿ", "instruction": "Call 108 immediately if bleeding does not slow after 15 minutes of direct pressure, if blood is spurting, or if the wound is deep. Keep patient warm to prevent shock.", "instructionKannada": "15 ನಿಮಿಷ ನಂತರವೂ ರಕ್ತಸ್ರಾವ ನಿಂತಿಲ್ಲದಿದ್ದರೆ ತಕ್ಷಣ 108 ಕರೆ ಮಾಡಿ.", "doText": "Keep patient warm and lying down to prevent shock", "doTextKannada": "ಶಾಕ್ ತಡೆಯಲು ರೋಗಿಯನ್ನು ಬೆಚ್ಚಗಿಡಿ ಮತ್ತು ಮಲಗಿಸಿ", "dontText": "Never use a tourniquet unless trained to do so", "dontTextKannada": "ತರಬೇತಿ ಇಲ್ಲದೆ ಟೂರ್ನಿಕ್ಯೂ ಬಳಸಬೇಡಿ", "drawableIcon": "ic_step_call"}
+      ]
+    },
+    {
+      "id": "drowning",
+      "name": "Drowning",
+      "nameKannada": "ಮುಳುಗಡೆ",
+      "icon": "🌊",
+      "severity": "critical",
+      "description": "Remove from water and begin CPR immediately.",
+      "descriptionKannada": "ನೀರಿನಿಂದ ತೆಗೆದು ತಕ್ಷಣ CPR ಪ್ರಾರಂಭಿಸಿ.",
+      "steps": [
+        {"stepNumber": 1, "title": "Remove safely from water", "titleKannada": "ನೀರಿನಿಂದ ಸುರಕ್ಷಿತವಾಗಿ ತೆಗೆಯಿರಿ", "instruction": "Do not jump in unless trained. Throw a rope, life ring, or extend a stick. Call for help. Once on land, check for breathing immediately.", "instructionKannada": "ತರಬೇತಿ ಇಲ್ಲದಿದ್ದರೆ ನೀರಿಗೆ ಹಾರಬೇಡಿ. ಹಗ್ಗ ಅಥವಾ ಕೋಲು ಎಸೆಯಿರಿ.", "doText": "Throw a rope, ring, or floating object first", "doTextKannada": "ಮೊದಲು ಹಗ್ಗ, ಉಂಗುರ ಅಥವಾ ತೇಲುವ ವಸ್ತು ಎಸೆಯಿರಿ", "dontText": "Never enter water unless you are a strong swimmer", "dontTextKannada": "ಬಲಿಷ್ಠ ಈಜುಗಾರನಾಗದ ಹೊರತು ನೀರಿಗಿಳಿಯಬೇಡಿ", "drawableIcon": "ic_step_remove"},
+        {"stepNumber": 2, "title": "Begin rescue breathing", "titleKannada": "ರಕ್ಷಣೆ ಉಸಿರಾಟ ಪ್ರಾರಂಭಿಸಿ", "instruction": "Lay on their back. Tilt head back, lift chin. Give 2 rescue breaths. Then check pulse. Begin CPR (30 compressions, 2 breaths) if no pulse.", "instructionKannada": "ಬೆನ್ನ ಮೇಲೆ ಮಲಗಿಸಿ. ತಲೆ ಹಿಂದಕ್ಕೆ ತಿರುಗಿಸಿ, ಗದ್ದ ಮೇಲೆ ಎತ್ತಿ. 2 ರಕ್ಷಣೆ ಉಸಿರು ಕೊಡಿ.", "doText": "Give 5 initial rescue breaths for drowning victims", "doTextKannada": "ಮುಳುಗಿದ ಬಲಿಪಶುವಿಗೆ 5 ರಕ್ಷಣೆ ಉಸಿರು ಕೊಡಿ", "dontText": "Never waste time trying to remove water from lungs", "dontTextKannada": "ಶ್ವಾಸಕೋಶದಿಂದ ನೀರು ತೆಗೆಯಲು ಸಮಯ ವ್ಯರ್ಥ ಮಾಡಬೇಡಿ", "drawableIcon": "ic_step_cpr"},
+        {"stepNumber": 3, "title": "Call 108 and keep warm", "titleKannada": "108 ಕರೆ ಮಾಡಿ ಮತ್ತು ಬೆಚ್ಚಗಿಡಿ", "instruction": "Call 108. Continue CPR until help arrives. Cover the person with a blanket or dry clothing to prevent hypothermia. All drowning victims need hospital evaluation even if they seem fine.", "instructionKannada": "108 ಕರೆ ಮಾಡಿ. ಸಹಾಯ ಬರುವವರೆಗೆ CPR ಮುಂದುವರಿಸಿ. ತಾಪಮಾನ ಕಡಿಮೆ ತಡೆಯಲು ಹೊದಿಕೆಯಿಂದ ಮುಚ್ಚಿ.", "doText": "All drowning victims need hospital check-up", "doTextKannada": "ಎಲ್ಲ ಮುಳುಗಿದ ಬಲಿಪಶುಗಳು ಆಸ್ಪತ್ರೆ ತಪಾಸಣೆ ಅಗತ್ಯ", "dontText": "Never assume they are fine without hospital visit", "dontTextKannada": "ಆಸ್ಪತ್ರೆ ಭೇಟಿಯಿಲ್ಲದೆ ಅವರು ಚೆನ್ನಾಗಿದ್ದಾರೆ ಎಂದು ತಿಳಿಯಬೇಡಿ", "drawableIcon": "ic_step_call"}
+      ]
+    },
+    {
+      "id": "seizure",
+      "name": "Seizure / Epilepsy",
+      "nameKannada": "ಮೂರ್ಛೆ / ಅಪಸ್ಮಾರ",
+      "icon": "⚡",
+      "severity": "critical",
+      "description": "Protect the person, do not restrain.",
+      "descriptionKannada": "ವ್ಯಕ್ತಿಯನ್ನು ರಕ್ಷಿಸಿ, ಹಿಡಿದಿಡಬೇಡಿ.",
+      "steps": [
+        {"stepNumber": 1, "title": "Clear the area", "titleKannada": "ಪ್ರದೇಶ ತೆರವುಗೊಳಿಸಿ", "instruction": "Remove any hard or sharp objects from around the person. Gently guide them to the floor if possible. Cushion their head with something soft.", "instructionKannada": "ವ್ಯಕ್ತಿ ಸುತ್ತ ಗಟ್ಟಿ ಅಥವಾ ಚೂಪಾದ ವಸ್ತುಗಳನ್ನು ತೆಗೆಯಿರಿ. ತಲೆ ಮೃದುವಾದ ಕುಶನ್‌ನಿಂದ ಆಧರಿಸಿ.", "doText": "Cushion the head and clear sharp objects away", "doTextKannada": "ತಲೆ ಕುಶನ್ ಮಾಡಿ ಮತ್ತು ಚೂಪಾದ ವಸ್ತುಗಳು ತೆಗೆಯಿರಿ", "dontText": "Never hold the person down or restrict movement", "dontTextKannada": "ವ್ಯಕ್ತಿಯನ್ನು ಹಿಡಿದಿಡಬೇಡಿ ಅಥವಾ ಚಲನೆ ನಿರ್ಬಂಧಿಸಬೇಡಿ", "drawableIcon": "ic_step_calm"},
+        {"stepNumber": 2, "title": "Turn on their side", "titleKannada": "ಅವರನ್ನು ಅಕ್ಕಪಕ್ಕ ತಿರುಗಿಸಿ", "instruction": "Once convulsions slow, gently roll the person onto their side (recovery position) to help keep the airway clear and prevent choking on saliva or vomit.", "instructionKannada": "ತಡೆಗಟ್ಟುವಿಕೆ ನಿಧಾನವಾದ ನಂತರ, ವ್ಯಕ್ತಿಯನ್ನು ಮೃದುವಾಗಿ ಅಕ್ಕಪಕ್ಕ ತಿರುಗಿಸಿ ಉಸಿರಿನ ಹಾದಿ ತೆರೆದಿಡಿ.", "doText": "Place in recovery position on their side", "doTextKannada": "ಅಕ್ಕಪಕ್ಕ ಚೇತರಿಕೆ ಸ್ಥಾನದಲ್ಲಿ ಇಡಿ", "dontText": "Never put anything in their mouth", "dontTextKannada": "ಅವರ ಬಾಯಿಯಲ್ಲಿ ಏನನ್ನೂ ಹಾಕಬೇಡಿ", "drawableIcon": "ic_step_calm"},
+        {"stepNumber": 3, "title": "Time the seizure, call 108", "titleKannada": "ಮೂರ್ಛೆ ಸಮಯ ನೋಡಿ, 108 ಕರೆ ಮಾಡಿ", "instruction": "Note when the seizure started. Call 108 if: seizure lasts more than 5 minutes, another seizure follows, person doesn't regain consciousness, or it's a first seizure ever.", "instructionKannada": "ಮೂರ್ಛೆ ಯಾವಾಗ ಪ್ರಾರಂಭವಾಯಿತು ಎಂದು ನೋಡಿ. 5 ನಿಮಿಷಕ್ಕಿಂತ ಹೆಚ್ಚು ಇದ್ದರೆ 108 ಕರೆ ಮಾಡಿ.", "doText": "Call 108 if seizure lasts more than 5 minutes", "doTextKannada": "ಮೂರ್ಛೆ 5 ನಿಮಿಷಕ್ಕಿಂತ ಹೆಚ್ಚಿದ್ದರೆ 108 ಕರೆ ಮಾಡಿ", "dontText": "Never offer food or water until fully conscious", "dontTextKannada": "ಪೂರ್ಣ ಪ್ರಜ್ಞೆ ಬರುವವರೆಗೆ ಆಹಾರ ಅಥವಾ ನೀರು ಕೊಡಬೇಡಿ", "drawableIcon": "ic_step_call"}
+      ]
+    },
+    {
+      "id": "poisoning",
+      "name": "Poisoning",
+      "nameKannada": "ವಿಷ ಸೇವನೆ",
+      "icon": "☠️",
+      "severity": "critical",
+      "description": "Call 108, do not induce vomiting.",
+      "descriptionKannada": "108 ಕರೆ ಮಾಡಿ, ವಾಂತಿ ಮಾಡಿಸಬೇಡಿ.",
+      "steps": [
+        {"stepNumber": 1, "title": "Identify the poison", "titleKannada": "ವಿಷ ಗುರುತಿಸಿ", "instruction": "Find out what was swallowed, inhaled, or touched. Keep the container if possible. Check for burns around mouth, unusual breath odour, or unconsciousness.", "instructionKannada": "ಏನು ನುಂಗಲಾಗಿದೆ, ಉಸಿರಾಡಲಾಗಿದೆ ಅಥವಾ ಸ್ಪರ್ಶಿಸಲಾಗಿದೆ ಎಂದು ತಿಳಿಯಿರಿ. ಸಾಧ್ಯವಾದರೆ ಪಾತ್ರೆ ಇಟ್ಟುಕೊಳ್ಳಿ.", "doText": "Keep the poison container to show doctors", "doTextKannada": "ವಿಷದ ಪಾತ್ರೆ ವೈದ್ಯರಿಗೆ ತೋರಿಸಲು ಇಟ್ಟುಕೊಳ್ಳಿ", "dontText": "Never induce vomiting unless told by a doctor", "dontTextKannada": "ವೈದ್ಯರು ಹೇಳದ ಹೊರತು ವಾಂತಿ ಮಾಡಿಸಬೇಡಿ", "drawableIcon": "ic_step_symptoms"},
+        {"stepNumber": 2, "title": "Call 108 immediately", "titleKannada": "ತಕ್ಷಣ 108 ಕರೆ ಮಾಡಿ", "instruction": "Call 108 immediately. Tell them what poison was taken, how much, and when. Follow their instructions. If the person is unconscious, place in recovery position and monitor breathing.", "instructionKannada": "ತಕ್ಷಣ 108 ಕರೆ ಮಾಡಿ. ಯಾವ ವಿಷ, ಎಷ್ಟು ಮತ್ತು ಯಾವಾಗ ತೆಗೆದುಕೊಳ್ಳಲಾಗಿದೆ ಎಂದು ಹೇಳಿ.", "doText": "Tell 108 the type, amount, and time of poisoning", "doTextKannada": "108 ಗೆ ವಿಧ, ಪ್ರಮಾಣ ಮತ್ತು ಸಮಯ ತಿಳಿಸಿ", "dontText": "Never give milk, water, or food without medical advice", "dontTextKannada": "ವೈದ್ಯಕೀಯ ಸಲಹೆಯಿಲ್ಲದೆ ಹಾಲು, ನೀರು ಅಥವಾ ಆಹಾರ ಕೊಡಬೇಡಿ", "drawableIcon": "ic_step_call"}
+      ]
+    },
+    {
+      "id": "heatstroke",
+      "name": "Heat Stroke",
+      "nameKannada": "ಶಾಖದ ಹೊಡೆತ",
+      "icon": "☀️",
+      "severity": "critical",
+      "description": "Cool the body immediately, call 108.",
+      "descriptionKannada": "ತಕ್ಷಣ ದೇಹ ತಣ್ಣಗಾಗಿಸಿ, 108 ಕರೆ ಮಾಡಿ.",
+      "steps": [
+        {"stepNumber": 1, "title": "Move to a cool place", "titleKannada": "ತಂಪಾದ ಸ್ಥಳಕ್ಕೆ ಸರಿಸಿ", "instruction": "Move the person immediately to a cool, shaded area. Remove excess clothing. Lay them down and elevate their legs slightly.", "instructionKannada": "ವ್ಯಕ್ತಿಯನ್ನು ತಕ್ಷಣ ತಂಪಾದ, ಮರೆಯಾದ ಸ್ಥಳಕ್ಕೆ ಸರಿಸಿ. ಹೆಚ್ಚಿನ ಬಟ್ಟೆ ತೆಗೆಯಿರಿ.", "doText": "Fan them and apply wet cloths to neck and armpits", "doTextKannada": "ಗಾಳಿ ಹಾಕಿ ಮತ್ತು ಕತ್ತು ಮತ್ತು ತೋಳಿನ ಕೆಳಗೆ ಒದ್ದೆ ಬಟ್ಟೆ ಹಾಕಿ", "dontText": "Never give aspirin or paracetamol for heat stroke", "dontTextKannada": "ಶಾಖದ ಹೊಡೆತಕ್ಕೆ ಆಸ್ಪಿರಿನ್ ಅಥವಾ ಪ್ಯಾರಾಸಿಟಮಾಲ್ ಕೊಡಬೇಡಿ", "drawableIcon": "ic_step_move_away"},
+        {"stepNumber": 2, "title": "Cool the body rapidly", "titleKannada": "ದೇಹ ತ್ವರಿತವಾಗಿ ತಣ್ಣಗಾಗಿಸಿ", "instruction": "Apply cool (not ice cold) wet cloths to neck, armpits, and groin. Fan the person continuously. Give cool water to drink if conscious and able to swallow.", "instructionKannada": "ಕತ್ತು, ತೋಳಿನ ಕೆಳಗೆ ಮತ್ತು ತೊಡೆಸಂದಿಗೆ ತಂಪು ಒದ್ದೆ ಬಟ್ಟೆ ಹಾಕಿ. ನಿರಂತರ ಗಾಳಿ ಹಾಕಿ.", "doText": "Focus cooling on neck, armpits, and groin areas", "doTextKannada": "ಕತ್ತು, ತೋಳು ಕೆಳಗೆ ಮತ್ತು ತೊಡೆಸಂದಿ ತಂಪು ಮಾಡಿ", "dontText": "Never use ice bath — it can cause shock", "dontTextKannada": "ಮಂಜಿನ ಸ್ನಾನ ಬಳಸಬೇಡಿ — ಶಾಕ್ ಉಂಟಾಗಬಹುದು", "drawableIcon": "ic_step_water"},
+        {"stepNumber": 3, "title": "Call 108", "titleKannada": "108 ಕರೆ ಮಾಡಿ", "instruction": "Heat stroke is a medical emergency. Call 108 immediately. Monitor temperature and consciousness. Continue cooling efforts until ambulance arrives.", "instructionKannada": "ಶಾಖದ ಹೊಡೆತ ವೈದ್ಯಕೀಯ ತುರ್ತು ಸ್ಥಿತಿ. ತಕ್ಷಣ 108 ಕರೆ ಮಾಡಿ. ತಾಪಮಾನ ಮತ್ತು ಪ್ರಜ್ಞೆ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ.", "doText": "Continue cooling efforts until ambulance arrives", "doTextKannada": "ಆಂಬ್ಯುಲೆನ್ಸ್ ಬರುವವರೆಗೆ ತಣ್ಣಗಾಗಿಸುವ ಪ್ರಯತ್ನ ಮುಂದುವರಿಸಿ", "dontText": "Never give alcohol or caffeinated drinks", "dontTextKannada": "ಮದ್ಯ ಅಥವಾ ಕೆಫೀನ್ ಪಾನೀಯ ಕೊಡಬೇಡಿ", "drawableIcon": "ic_step_call"}
+      ]
+    }
+  ]
+}

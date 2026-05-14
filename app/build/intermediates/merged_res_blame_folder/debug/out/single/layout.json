@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.pratham.chikitse.app-mergeDebugResources-45:/layout/activity_step_detail.xml",
+        "source": "com.pratham.chikitse.app-main-48:/layout/activity_step_detail.xml"
+    },
+    {
+        "merged": "com.pratham.chikitse.app-mergeDebugResources-45:/layout/item_hospital.xml",
+        "source": "com.pratham.chikitse.app-main-48:/layout/item_hospital.xml"
+    },
+    {
+        "merged": "com.pratham.chikitse.app-mergeDebugResources-45:/layout/activity_main.xml",
+        "source": "com.pratham.chikitse.app-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.pratham.chikitse.app-mergeDebugResources-45:/layout/activity_hospital.xml",
+        "source": "com.pratham.chikitse.app-main-48:/layout/activity_hospital.xml"
+    },
+    {
+        "merged": "com.pratham.chikitse.app-mergeDebugResources-45:/layout/fragment_step.xml",
+        "source": "com.pratham.chikitse.app-main-48:/layout/fragment_step.xml"
+    },
+    {
+        "merged": "com.pratham.chikitse.app-mergeDebugResources-45:/layout/item_emergency_tile.xml",
+        "source": "com.pratham.chikitse.app-main-48:/layout/item_emergency_tile.xml"
+    }
+]
