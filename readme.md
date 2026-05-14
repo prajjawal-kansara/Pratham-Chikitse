@@ -1,4 +1,4 @@
-# ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ — Pratham Chikitse
+# Pratham Chikitse
 
 > **"First Aid in Your Pocket"** — An offline emergency first-aid guide for everyone, in Kannada and English.
 
