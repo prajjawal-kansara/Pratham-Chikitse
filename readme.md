@@ -24,20 +24,12 @@ No internet. No login. No ads. Ready in under 500ms.
 
 ---
 
-## Screenshots
-
-| Home Screen | Step-by-Step Guide | Hospital Finder |
-|---|---|---|
-| Emergency tiles with severity color coding | ViewPager2 with Do's & Don'ts | GPS-sorted hospitals with call button |
-
----
-
 ## Features
 
 ### 🚨 Emergency SOS
 One large red button at the top of the home screen. Single tap calls **108** (the national ambulance number). Works even mid-panic.
 
-### 📋 20 Emergency Types
+### 📋 10 Emergency Types
 Each emergency has 3–5 medically accurate steps with:
 - English instruction (large, bold, readable under stress)
 - Kannada translation below each step
